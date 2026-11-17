@@ -1,0 +1,206 @@
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head> 
+    
+    <style>
+        body {
+            background-color: #1c3d9e;
+            background-image: url('caneta-azul.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            color: #ffffff;
+        }
+        .seta {
+            background: none;
+            border: 2px solid #ffd700;
+            color: #ffd700;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 1.1em;
+            cursor: pointer;
+            margin: 20px 0;
+        }
+        .seta span {
+            display: inline-block;
+            animation: pulsar 1s infinite;
+        }
+        @keyframes pulsar {
+            0%, 100% { transform: translateX(0); }
+            50% { transform: translateX(8px); }
+        }
+        #segredo {
+            display: none;
+            margin-top: 20px;
+            padding: 15px;
+            border: 2px dashed #ffd700;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feira de Tecnologia - IFPA</title>
+</head>
+<body>
+    <!-- CABEÇAlHO-->
+    <header>
+        <h1>INSCRIÇÃO CAPEONATO DE AURA</h1>
+        <p>ESTADO DO PARÁ</p>
+    </header>
+    <hr>
+    <!-- MENU DE DODIU -->
+    <nav>
+        <a href="#MODALIDADES">MODALIDADES</a>
+        <a href="#projetos">PROJETOS</a>
+        <a href="#VENHA SER AURUDO">VENHA SER AURUDO</a>
+    </nav>
+    <hr>
+    <!-- CONTEÚDO PRINCIPAL -->
+    <main>
+        <!-- SEÇÃO INICIAL -->
+        <section id="inicio">
+            <h2>Bem-vindo AO SUper campeonato de aura farmer!</h2>
+            <p>
+                o campeonato de farmar aura é o mair do mundo onde
+                só os verdadeiros goats de aura residem, e para descobrir 
+                sua capacidade venha competir!!!!!!!!!!!
+            </p>
+        </section>
+        <hr>
+
+        <!-- SOBRE O EVENTO -->
+        <section id="sobre">
+            <h2>Sobre o evento</h2>
+            <p>
+                DUrante o evento global de aura tera muitos outro
+                eventos que irao chamar sua atençao venha descobri
+                do pq milhares de pessoas de todo o mundo vem se reunir.
+            </p>
+            <h3>Principais objetivos</h3>
+            <ul>
+                <li> descobrir o verdadeiro maior aurudo do mundo</li>
+                <li>Incentivar a farmação de aura</li>
+            </ul>
+        </section>
+        <hr>
+
+        <!-- PROGRAMAÇÃO -->
+        <section id="programacao">
+            <h2>Programação do evento</h2>
+            <p>Confira algumas atividades previstas:</p>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Horário</th>
+                        <th>Atividade</th>
+                        <th>Local</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>08:00</td>
+                        <td>Abertura do evento</td>
+                        <td>belem para</td>
+                    </tr>
+                    <tr>
+                        <td>09:00</td>
+                        <td>quem mogga quem?</td>
+                        <td>Laboratórios</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+        <hr>
+
+        <!-- PROJETOS -->
+        <section id="projetos">
+            <h2>Projetos em destaque</h2>
+            <article>
+                <h3>doação de aura</h3>
+                <p>
+                    Ajuda jovens de todas as idades a farmarem
+                    aura, mesmo aqueles mais necessitados
+                </p>
+            </article>
+            <article>
+                <h3>ensinamento de veteranos de aura</h3>
+                <p>
+                    aprenda com os melhores colts de AURAdo mundo
+                </p>
+            </article>
+        </section>
+        <hr>
+
+        <!-- INSCRIÇÃO -->
+        <section id="inscricao">
+            <h2>Inscreva-se no evento</h2>
+            <p>
+                Preencha as informações abaixo para demonstrar
+                seu interesse em participar.
+            </p>
+
+            <form>
+                <p>
+                    <label for="nome">Nome completo:</label><br>
+                    <input type="text" id="nome" name="nome">
+                </p>
+                <p>
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                <p>
+                    <label for="curso">quanto a sua aura?:</label><br>
+                    <input type="text" id="curso" name="curso">
+                </p>
+                <p>
+                    <label for="atividade">Atividade de interesse:</label><br>
+                    <select id="atividade" name="atividade">
+                        <option>Farmar aura</option>
+                        <option>Doar aura</option>
+                        <option>Aprender a farmar Aura</option>
+                        <option>Apenas ser um dos milhares de telespectadores
+                        </option>
+                    </select>
+                </p>
+                <button type="submit">Enviar inscrição</button>
+            </form>
+        </section>
+         <button class="seta" id="btn-seta">Clique aqui <span>➜</span></button>
+
+<div id="segredo">
+    <h2>Segredo desbloqueado!</h2>
+    <p>Você encontrou o segredo da caneta azul</p>
+    <button id="btn-oof">Oof!</button>
+    <audio id="som-oof" preload="auto">
+        <source src="oof.mp3" type="audio/mpeg">
+    </audio>
+</div>
+    </main>
+    <hr>
+
+    <!-- RODAPÉ -->
+    <footer>
+        <p>Campeonato Mundial de farmar aura - MOOgGER.inc</p>
+        <p>Desenvolvido para fins obvios.</p>
+        <p>&copy; 2026 - Todos os direitos reservados.</p>
+    </footer>
+    <script>
+    const btnSeta = document.getElementById('btn-seta');
+    const segredo = document.getElementById('segredo');
+    const btnOof = document.getElementById('btn-oof');
+    const somOof = document.getElementById('som-oof');
+
+    btnSeta.addEventListener('click', () => {
+        segredo.style.display = 'block';
+        btnSeta.style.display = 'none';
+    });
+
+    btnOof.addEventListener('click', () => {
+        somOof.currentTime = 0;
+        somOof.play();
+    });
+</script>
+</body>
+<body></body>
+</html>
